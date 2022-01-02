@@ -1,0 +1,73 @@
+:root {
+    --toner-gray: #F5F3F4;
+    --light-gray: #D3D3D3;
+    --silver-chalice: #B1A7A6;
+    --imp-red: #E5383B;
+    --carnelian: #BA181B;
+    --ruby-red: #A4161A;
+    --blood-red: #660708;
+    --eerie-black: #161A1D;
+    --rich-black: #0B090A;
+}
+
+.carousel-item {
+    max-height: 54rem;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: -1;
+}
+
+.carousel-caption{
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.transparent-bg {
+    background: linear-gradient(360deg, rgba(0,0,0,0.856447688564477) 4%, rgba(255,0,0,0) 100%);
+}
+
+.btn-primary {
+    background-color: var(--imp-red);
+    border-color: var(--imp-red);
+}
+
+.btn-primary.disabled {
+    background-color: var(--imp-red);
+    border-color: var(--imp-red);
+}
+.btn-primary:hover {
+    background-color: var(--carnelian);
+    border-color: var(--carnelian);
+}
+
+hr.divider {
+    background-color: var(--imp-red);
+}
+
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, 
+    rgba(92, 77, 66, 0.5) 100%), 
+    url("../images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.testimonial-slider .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: #dc3545;
+    border-radius: 100%;
+}
+.testimonial-slider {
+    padding: 10px 0px 40px;
+}

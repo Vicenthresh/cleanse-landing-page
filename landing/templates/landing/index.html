@@ -1,0 +1,114 @@
+{% extends 'landing/main.html' %}
+
+{% block content %}
+{% load static %}
+
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">Limpieza espiritual a tu alcance</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <a class="btn btn-primary btn-xl" href="#about">Descubre más</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Call to action-->
+<section id="about" class="page-section bg-dark text-white">
+  <div class="container px-4 px-lg-5 text-center">
+      <h2 class="mb-4">Sobre nosotros</h2>
+      <p class="text-white-75 mb-3">
+        Ofrecemos los mejores servicios para tus necesidades espirituales. 
+        Limpieza de maldiciones, bendiciones, exorcismos y más.
+      </p>
+      <p class="text-white-75 mb-5">
+        Si sientes ruidos durante la noche que no te dejan dormir, o has tenido mucha mala suerte ultimamente y sientes que
+        no es normal, podemos ayudarte.
+      </p>
+      <div class="align-self-baseline">
+        <a class="btn btn-primary btn-xl" href="{% url 'team' %}">Nuestro equipo</a>
+    </div>
+  </div>
+</section>
+
+<div id="services" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="{% static 'images/bg3.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption w-100 d-none d-md-block  transparent-bg">
+        <h4>First slide label</h4>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/bg4.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption w-100 d-none d-md-block  transparent-bg">
+        <h4>Second slide label</h4>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/bg6.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption w-100 d-none d-md-block  transparent-bg">
+        <h4>Third slide label</h4>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#services" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#services" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section id="testimonies" class="testimonial-slider bg-light">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner py-5 text-center">
+          <div class="carousel-item active">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>                    
+              <figure class="text-cent col-md-6 offset-md-3 mt-4">
+                  <blockquote class="blockquote">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">Jonh Son</figcaption>
+              </figure>
+          </div>
+          <div class="carousel-item">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+              <figure class="col-md-6 offset-md-3 mt-4">
+                  <blockquote class="blockquote">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">Jonh Son</figcaption>
+              </figure>
+          </div>
+          <div class="carousel-item">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+              <figure class="col-md-6 offset-md-3 mt-4">
+                  <blockquote class="blockquote">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">Jonh Son</figcaption>
+              </figure>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% include 'landing/contact-form.html' %}
+
+{% endblock %}
+
