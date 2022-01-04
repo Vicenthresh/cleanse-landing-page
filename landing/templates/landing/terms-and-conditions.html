@@ -1,0 +1,70 @@
+{% extends 'landing/main-2.html' %}
+{% load static %}
+{% block content %}
+<section class="page-section bg-dark">
+
+    <div class="container px-4 px-lg-5 pb-3 text-center">
+        <h2 class="mb-4 text-white">Términos y Condiciones</h2>
+        <p class="text-white-75 mb-3">
+            Al pagar por cualquiera de nuestros servicios estas aceptando los siguientes términos.
+        </p>
+    </div>
+
+<div class="container mt-3 text-white">
+    <div class="contenido">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-3 pt-2 pb-2">
+                    <img src="{% static 'images/block.png' %}" class="img-responsive bg-light rounded p-1">
+                </div>
+                <div class="col-md-9">
+                    <h3>RESTRICCIONES</h3>
+                    <p>
+                        Servicio exclusivo para mayores de 18 años. 
+                        Según legislaciones vigentes, los hechizos y predicciones tienen fines de entretenimiento y/o ayuda personal.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-3 pt-2 pb-2">
+                    <img src="{% static 'images/alert.png' %}" class="img-responsive bg-light rounded p-1">
+                </div>
+                <div class="col-md-9">
+                    <h3>ACLARACIÓN</h3>
+                    <p>
+                        El cliente debe tener confianza y tranquilidad para que el resultado sea real y verdadero.
+                        Aceptando estas condiciones lo ayudaremos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-3 pt-2 pb-2">
+                    <img src="{% static 'images/privacy.png' %}" class="img-responsive bg-light rounded p-1">
+                </div>
+                <div class="col-md-9">
+                    <h3>PRIVACIDAD</h3>
+                    
+                        Los datos , fotos e información privada enviada por correo electrónico o por cualquier otro medio por el cliente son confidenciales, 
+                        y no tendrán mal uso en contra del mismo.
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-3 pt-2 pb-2">
+                    <img src="{% static 'images/payment.png' %}" class="img-responsive bg-light rounded p-1">
+                </div>
+                <div class="col-md-9">
+                    <h3>FORMAS DE PAGO</h3>
+                    
+                        Los pagos son con deposito en cuenta. Se paga la mitad del presupuesto pactado, al iniciar el proceso y al ir viendo avances paga el resto. 
+                        Después de iniciado el trabajo no hay lugar a reclamo ni reembolso de dinero.
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock %}

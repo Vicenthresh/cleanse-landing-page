@@ -7,3 +7,9 @@ def index(request):
 
 def team(request):
     return render(request, 'landing/team.html')
+
+def tc(request):
+    return render(request, 'landing/terms-and-conditions.html')
+
+def services(request):
+    return render(request, 'landing/services.html')

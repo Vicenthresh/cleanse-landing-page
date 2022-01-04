@@ -1,0 +1,139 @@
+{% extends 'landing/main-2.html' %}
+{% load static %}
+{% block content %}
+<section class="page-section bg-dark">
+
+    <div class="container px-4 px-lg-5 pb-3 text-center mb-4">
+        <h2 class="mb-4 text-white">Servicios</h2>
+        <p class="text-white-75 mb-3">
+            Recuerda leer nuestros
+            <a class="no-decoration" href="{% url 'tc' %}">
+                términos y condiciones
+            </a>
+            antes de requerir nuestros servicios
+        </p>
+    </div>
+
+    <section class="d-flex w-100" id="tarot">
+        <div class="text-half d-flex">
+          <article class="article-text">
+            <h1 class="mb-3">Lectura del Tarot</h1>
+            <p class="text-justify">Muchas personas que recurren al arte de la adivinación con el código del tarot. Cuando las personas quieren solucionar 
+                situaciones difíciles y no saben qué hacer, buscan ayuda de diferentes tipos, y dentro de éstas, encuentran la orientación 
+                a través de la lectura de cartas tarot.
+            </p>
+            <p class="text-justify">
+                Para una buena lectura del tarot, lo ideal es que te lea alguien que tú no conoces, así mismo no decirle nada, 
+                sólo que interprete lo que ve para que te de una información imparcial.
+          </article>
+        </div>
+        <div class="img-half">
+          <article>
+            <img class="img-responsive img-100-cover" src="{% static 'images/services/tarot.jpg' %}">
+          </article>
+        </div>
+    </section>
+
+    <section class="d-flex w-100" id="healing">
+        <div class="img-half">
+          <article>
+            <img class="img-responsive img-100-cover" data-aos="fade-right"  src="{% static 'images/services/healing.jpg' %}">
+          </article>
+        </div>
+        <div class="text-half d-flex">
+            <article class="article-text">
+              <h1 class="mb-3">Sanaciones</h1>
+                <p>
+                    Recurrir a las sanaciones u operaciones espirituales es entregarte paz, armonía y luz. Es renovar tus energías,
+                    cambiar tus ánimos, y alejar el negativismo de tu corazón.
+                </p>
+                <p>
+                    Estas sanaciones se realizan a través del uso de medios espirituales, 
+                    imposiciones de manos, alineación de chakras, limpiezas de aura, armonización de energías a través de la técnica china llamada reiki.
+                </p>
+            </article>
+          </div>
+    </section>
+
+    <section class="d-flex w-100" id="cleaning">
+        <div class="text-half d-flex">
+          <article class="article-text">
+            <h1 class="mb-3">Limpieza espiritísta</h1>
+            <p>Pesadez en los ambientes, aparatos domésticos que se rompen, pesadillas constantes y ruidos extraños... </p>
+            <p>Ofrecemos rituales de protección de ambientes para limpiar cargas negativas y maldiciones en tu hogar, 
+                para poder darle paz a los espíritus y a ti.</p>
+          </article>
+        </div>
+        <div class="img-half">
+          <article>
+            <img class="img-responsive img-100-cover" data-aos="fade-right" src="{% static 'images/bg1.jpg' %}">
+          </article>
+        </div>
+    </section>
+
+    <section class="d-flex w-100" id="">
+        <div class="img-half">
+          <article>
+            <img class="img-responsive img-100-cover" data-aos="fade-right" src="{% static 'images/services/couple.jpg' %}">
+          </article>
+        </div>
+        <div class="text-half d-flex" id="reconcile">
+            <article class="article-text">
+              <h1 class="mb-3">Reconciliación</h1>
+                <p>
+                    Muchas personas llenan su corazón de enemistad, orgullo y energía negativa, aquellos no saben que se convierten en seres carentes de afecto, 
+                    que sufren viviendo encerrados en la amargura y el resentimiento, es por esto que nosotros como círculo espiritual combatimos la desunión.
+                </p>
+              <p>Para realizar este ritual realizamos sesiones con hierbas mapuches como la viravira (hierba de la vida), 
+                  chonta, palo santo, hojas de plátano, vino oporto, estos y muchos otros secretos logran la reconciliación perfecta, 
+                  consiguiendo que fluya la comunicación en la pareja o recuperar una amistad muy querida</p>
+            </article>
+          </div>
+    </section>
+
+    <section class=" mt-8-rem bg-dark text-white">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-5 text-center">
+                    <h2 class="mt-0">Costos</h2>
+                    <hr class="divider" />
+                    <p >Para más información acerca formas de pago, lee nuestros 
+                        <a class="no-decoration" href="{% url 'tc' %}">
+                            términos y condiciones</a></p>
+                    <p class="mb-5">
+                        En caso de cualquier pregunta no dudes en  
+                        <a class="no-decoration" href="{% url 'tc' %}">
+                            contactárnos
+                        </a>
+                    </p>
+                    <table class="table table-bordered text-white">
+                        <thead class="thead">
+                        <th>Servicio</th>
+                        <th>Rango de precio</th>
+                        </thead>
+                        <tbody class="table text-white">
+                        <tr>
+                            <td>Lectura del Tarot</td>
+                            <td>$25.000 - $40.000</td>
+                        </tr>
+                        <tr>
+                            <td>Sanaciones</td>
+                            <td>$35.000 - $60.000</td>
+                        </tr>
+                        <tr>
+                            <td>Limpieza espiritísta</td>
+                            <td>$65.000 - $200.000</td>
+                        </tr>
+                        <tr>
+                            <td>Reconciliación</td>
+                            <td>$70.000 - $100.000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+{% endblock %}
